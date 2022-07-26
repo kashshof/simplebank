@@ -16,4 +16,7 @@ migratedown:
 sqlcwin:
 	docker run --rm -v ${CURDIR}/db:/src -w /src kjconroy/sqlc:1.14.0 generate
 
+test:
+	go test -v -cover ./...
+
 .PHONY: postgres createdb dropdb migrateup sqlcwin
