@@ -26,7 +26,7 @@ func RandomString(n int) string {
 	return sb.String()
 }
 
-func RankdomOwner() string {
+func RandomOwner() string {
 	return RandomString(6)
 }
 
@@ -35,7 +35,7 @@ func RandomBalance() int64 {
 }
 
 func RandomCurrency() string {
-	currencies := []string{"EUR", "USD", "CAD"}
+	currencies := []string{EUR, USD}
 	n := len(currencies)
 	return currencies[rand.Intn(n)]
 }
